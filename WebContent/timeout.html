@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>事件-setInterval()设计计时器</title>
+<script type="text/javascript">
+var attime;
+function clock(){
+	var time=new Date();
+	attime=time.getHours()+":" +time.getMinutes()+":" +time.getSeconds()
+	document.getElementById("clock").value = attime;
+}
+setInterval(clock,1000);
+</script>
+</head>
+<body>
+ 	<input type="text" id="clock" size="0px" />
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录</title>
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
+    <script src="js/login-time.js"></script>
+    <script src="js/jquery-ajax.jsp"></script>
+    
+</head>
+
+<body onload="show()">
+    <div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">    
+    <img src="image/01qt.jpg" height="100%" width="100%"/>    
+    </div>
+    <object style="border:0px" type="text/x-scriptlet" data="timeout.html" width=100% height=30px></object>
+    <form style="margin: auto;" action="convaszoom.html" method="POST">
+        <center>用户登录</center><br/><br/> 
+		用户名: <br/> <input type="text" name="user"></input><br/><br/> 
+		密码: <br/><input type="password" name="pass"></input>
+        <br/>
+        <br/>
+        <input style="color: #fff;" type="submit" value="登录"></input>
+        <br/><br/> 还没有账号? <a href="register.html">立即注册</a>
+        <br/>
+        <br/> 时间:<p id="time"></p>
+    </form>
+
+</body>
+</html>

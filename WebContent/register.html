@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <script src="js/register.js"></script>
+    <link rel="stylesheet"type="text/css"href="css/register.css"  />
+
+</head>
+<body onload="SubmitCheck()">
+    <div style="margin: 0 auto;">
+        <br/>
+        <br/>
+        <form action="User-form">用户信息</form>
+    <br/><br/>
+    <form action="Servlet?method=add" method="POST" onsubmit="return check()">
+    <span><input onmouseout = "emailCheck()"  id="email"  type="text" name="email" /><br/><em id="1" ></em><br/><br/></span>
+    <span><input onmouseout = "usernameCheck()" id="username" type="text" name="username" /> <br/><em id="2" ></em><br/><br/></span>
+    <span><input onmouseout = "passwordCheck()" id="password" type="password" name="password" /><br/><em id="3" ></em><br/><br/></span>
+    <span style="margin-left: 248px;"><input onmouseout = "PassTwoCheck()" id ="PassTwo" type="password" name="PassTwo" /><br/><em id="4" ></em><br/></span>
+    <br/><br/><br/> 
+    <span><input id = "submit" disabled style="margin:center; width:300px; color:#fff; background: #999;" type="submit" value="立即注册"/></span>
+    <br/><br/>
+    <a href="index.html">已有账号，直接登录-Go</a>
+    </form>
+    </div>
+</body>
+</html>

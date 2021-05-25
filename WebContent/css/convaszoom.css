@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div{
+	margin:10px 368px;
+	background:#c0c0c0;
+	width:1152px;
+	height:150px;
+}
+
+tr{
+	margin:10px 368px;
+	background:#c0c0c0;
+	width:1152px;
+	height:20px;
+}
+
+th{
+	background:#c0c0c0;
+	width:230px;
+	height:10px;
+}
